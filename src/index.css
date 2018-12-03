@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.rbc-month-view {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 100px;
+  flex: 100px;
+  overflow: hidden;
+  /* height: 50rem !; */
+}
+
+.objectives {
+  text-indent: 50px;
+}
+
+.rbc-calendar {
+  min-height: 600px !important;
+}
