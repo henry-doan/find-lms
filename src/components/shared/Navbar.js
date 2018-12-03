@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SideNav } from 'react-materialize';
 import Logo from '../../imgs/find-logo.png';
+import Dpl from '../../imgs/DPL-logo.png';
 
 const Navbar = () => (
   <SideNav fixed>
@@ -35,6 +36,23 @@ const Navbar = () => (
         <i className="material-icons">calendar_today</i>
         Calendar
       </Link>
+    </li>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <li className="navLinks">
+      &nbsp; &nbsp; &nbsp;Powered By:
+      <a href='http://devpointlabs.com/' target='_blank' rel='noopener noreferrer'>
+        <img src={Dpl} width='100%' alt='dpl-logo' />
+      </a>
     </li>
   </SideNav>
 )
