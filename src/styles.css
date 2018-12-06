@@ -18,3 +18,8 @@ a navLinks {
   line-height: 48px;
   padding: 0 32px;
 }
+
+.lessons-btn a:link, .lessons-btn a:visited {
+  color: white;
+  text-decoration: none;
+}

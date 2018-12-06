@@ -1,47 +1,26 @@
 import React, { Component} from 'react';
-import { Collection, CollectionItem } from 'react-materialize';
-import { Link, Route } from 'react-router-dom';
-import Lesson from './Lesson';
-    
-class Lessons extends Component {
-  
-  lessonsList = () => {
-    const lessons = [
-      { title: 'Intro to Coding', subtopic: 'Why do we code?', content: 'because we do', id: 1 },
-      { title: 'Computer Setup', subtopic: 'Tools', content: 'com content', id: 2 },
-      { title: 'HTML5 Intro', subtopic: 'Web Structure', content: 'html stuff', id: 3 },
-    ]
-    
-    return lessons.map(l => (
-      <Route 
-        exact
-        path={`/lessons/${l.id}`}
-        render={ (props) => {
-          <Lesson title={l.title} subtopic={l.subtopic} content={l.content} key={l.id} />
-        }}
-      />
-    ))
-  }
+import { Button, Row, Col} from 'react-materialize';
+import { Link } from 'react-router-dom';
 
-  render() {
-    return(
-      <div className='container'>
-        <h1>Lessons</h1>
-        <hr />
-        <Collection header='Week 1'>
-          <CollectionItem>
-            <Link to='lessons/1'>Lesson 1</Link>
-          </CollectionItem>
-          <CollectionItem>
-            <Link to='lessons/2'>Lesson 2</Link>
-          </CollectionItem>
-          <CollectionItem>
-            <Link to='lessons/3'>Lesson 3</Link>
-          </CollectionItem>
-        </Collection>
-      </div>
-    )
-  }
-}
-
+const Lessons = () => (
+  <div className='container'>
+    <h1>Lessons</h1>
+    <Row>
+      <Col s={6}>
+        <Button waves='purple' className="lessons-btn">
+          <Link to='codingI-lessons'>
+            Coding I
+          </Link>
+        </Button>
+      </Col>
+      <Col s={6}>
+        <Button waves='purple' className="lessons-btn">
+          <Link to='codingII-lessons'>
+            Coding II
+          </Link>
+        </Button>
+      </Col>
+    </Row>
+  </div>
+)
 export default Lessons;
