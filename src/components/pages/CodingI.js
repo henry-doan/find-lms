@@ -5,6 +5,10 @@ import Lesson from './Lesson';
     
 class CodingI extends Component {
   
+  componentDidMount() {
+    this.lessonsList()
+  }
+
   lessonsList = () => {
     const lessons = [
       { title: 'Intro to Coding', subtopic: 'Why do we code?', content: 'because we do', id: 1 },
